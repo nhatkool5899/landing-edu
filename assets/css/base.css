@@ -1,0 +1,133 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
+
+@font-face{
+  font-family: "grind";
+  src: url('../fonts/Grind_Demolished.ttf');
+}
+@font-face{
+  font-family: "Aptima";
+  src: url('../fonts/SVN-Aptima.ttf');
+}
+
+/*  css variables */
+:root {
+  --card-bg-01: #821417;
+  --card-bg-02: #ec1d25;
+  --card-bg-03: #a11611;
+  --card-bg-04: #2a4e74;
+  --primary-color: #2b3e7e;
+  --hero-bg: #d6e5fb;
+  --heading-fontSize: 2rem;
+  --small-text-color: #333;
+  --heading-color: #900;
+  --heading-text-color: #0a1d37;
+}
+
+/* reset browser default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  color: var(--small-text-color);
+  font-size: 1rem;
+}
+
+h1,
+h2 {
+  font-size: var(--heading-fontSize);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+img{
+  width: 100%;
+}
+
+.section{
+  padding: 60px 0;
+}
+
+input:focus{
+  border: none;
+  outline: none;
+}
+
+
+.section__title{
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.main{
+  padding-bottom: 60px;
+  background: #f4f4f4;
+}
+
+.col-lg-custom{
+  flex: 0 0 auto;
+  width: 20%;
+}
+
+/* Customer flipdown */
+
+.rotor-group-heading{
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 65px;
+}
+
+
+
+.shape-1{
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-image: linear-gradient(to right, #fcf9ff, #cebce0, #a57af5) ;
+  transform: translateY(4px) rotate(45deg);
+  margin-right: 10px;
+}
+
+
+.shape-2{
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border: 1px solid #9c8fcc;
+  transform: translateY(4px) rotate(45deg);
+  margin-right: 10px;
+}
+
+
