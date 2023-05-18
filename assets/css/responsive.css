@@ -1,0 +1,96 @@
+@media (max-width: 1400px) {
+    .introduce__text{
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .banner__right {
+        width: 600px;
+    }
+}
+
+@media (max-width: 992px) {
+    .banner__text p{
+        width: auto;
+    }
+
+    .banner__right {
+        top: inherit;
+        bottom: -50px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .banner__name{
+        text-align: start;
+    }
+
+    .introduce__image{
+        margin: 20px 0;
+    }
+
+    .intro-style{
+        flex-direction: column-reverse;
+    }
+
+    .partner-edu{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .introduce__subtitle{
+        max-width: 100%;
+    }
+
+    .head__title{
+        font-size: 34px;
+    }
+
+    .activities-body{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .banner__right {
+        bottom: -50px;
+        width: 500px;
+    }
+
+    .introduce__title{
+        font-size: 36px;
+    }
+
+    .course__number{
+        font-size: 50px;
+    }
+
+    .course__number .line{
+        width: 50px;
+        border-bottom: 3px solid orange;
+        transform: translateX(12px);
+    }
+
+    .student-item{
+        margin-bottom: 40px;
+    }
+
+    .activities-body{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .banner__right {
+        bottom: -40px;
+        width: 80%;
+    }
+
+    .partner-edu{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .group-ft.text-center{
+        text-align: start !important;
+    }
+}

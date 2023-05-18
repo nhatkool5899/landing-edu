@@ -118,7 +118,7 @@
 @media (max-width: 1400px) {
     .banner__right{
         position: absolute;
-        right: 10px;
+        right: 20px;
         top: 100px;
         width: 750px;
     }
@@ -126,7 +126,40 @@
 
 
 .banner__left{
-    padding: 20px 0;
+    padding: 50px 0;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 70px;
+}
+
+.logo p{
+    color: #fff;
+    display: inline-flex;
+    font-size: 30px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+}
+
+.logo p::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+}
+
+.logo .head-1{
+    
 }
 
 .banner__subtitle{
@@ -157,13 +190,15 @@
 }
 
 .banner__name{
-    font-size: 40px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #3cfffc;
-    margin: 20px 0;
-    display: inline-block;
+    font-size: 29px;
+    font-weight: 500;
+    color: #FFC107;
+    margin: 16px 0;
+    display: block;
     position: relative;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    width: 360px;
 }
 
 /* .banner__name::after{
@@ -187,16 +222,15 @@
 
 .banner__text{
     position: relative;
-    width: 400px;
-    height: 300px;
+    margin-bottom: 20px;
 }
 .banner__text p{
-    width: 340px;
+    width: 360px;
     display: inline-block;
     text-align: justify;
-    line-height: 1.6;
+    line-height: 1.8;
     font-size: 15px;
-    transform: translate(26px, 26px);
+    color: #fff;
 }
 .banner__text p span{
     font-weight: 500;
@@ -207,7 +241,6 @@
     position: absolute;
     top: -20px;
     left: -34px;
-    background: url(../imgs/board-white.png) no-repeat;
     background-size: contain;
     height: 300px;
     width: 600px;
@@ -217,12 +250,25 @@
 
 .count__time{
     text-align: center;
-    width: 400px;
+    width: 360px;
+    position: relative;
+    padding-top: 10px;
+}
+
+.count__time::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    border: 1px solid #fff;
+    z-index: 999;
 }
 
 .count__time .timer{
     position: relative;
-    left: 46px;
+    left: 28px;
 }
 
 .count__time-title{
@@ -236,8 +282,8 @@
 
 .register__submit{
     position: absolute;
-    bottom: 64px;
-    right: 40px;
+    bottom: -15px;
+    left: 30%;
     padding: 8px 26px 8px 30px;
     border-radius: 6px;
     text-transform: uppercase;
@@ -328,6 +374,11 @@
 .introduce-item{
     margin-bottom: 10px;
     display: flex;
+}
+
+.introduce-item p span{
+    display: block;
+    font-weight: 600;
 }
 
 .introduce-item i{
@@ -643,15 +694,38 @@
 
 .profit-middle .register__submit{
     position: relative;
-    bottom: 0;
-    right: 0;
+    bottom: 8px;
+    left: 0;
+}
+
+.student-item .title {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 16px;
+    font-size: 22px;
+}
+
+.student-item .text{
+    margin-top: 6px;
+}
+
+.student-item .subtitle{
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.student-item .text ul{
+    list-style: disc;
+    margin-left: 10px;
 }
 
 
 
 .footer{
-    min-height: 500px;
-    background: url(../imgs/bg-ft.png);
+    min-height: 400px;
+    background: url(../imgs/background-ft.jpg);
     background-size: cover;
     background-position: center;
     padding: 60px 0;
@@ -659,7 +733,7 @@
 
 
 .group-ft{
-
+    margin-top: 30px;
 }
 
 .logo-ft{
@@ -669,5 +743,77 @@
 
 .logo-ft img{
     width: 100px;
+    margin-right: 6px;
 }
+
+.logo-ft span{
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--primary-color);
+}
+
+.logo-ft strong{
+    color: #ff7f15;
+    font-size: 36px;
+    transform: translateY(-4px);
+}
+
+.intro-ft{
+    padding: 8px 10px 0;
+    font-size: 15px;
+}
+
+.title-ft{
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.links-ft{
+    display: block;
+    margin: 6px 0;
+    padding: 4px 0;
+    transition: .3s;
+    position: relative;
+    right: 0;
+}
+
+.links-ft:hover{
+    color: teal;
+    right: -3px;
+}
+
+.paragraph{
+    margin: 8px 0;
+}
+.paragraph span{
+    font-weight: 600;
+    margin-right: 4px;
+}
+
+
+
+.partner-edu{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+}
+
+.partner-edu__item{
+    text-align: center;
+}
+
+.partner-edu__item img{
+    width: 150px;
+    margin: auto;
+}
+
+.partner-edu__item .text{
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+
+
 
