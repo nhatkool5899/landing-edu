@@ -93,4 +93,7 @@
     .group-ft.text-center{
         text-align: start !important;
     }
+    .information{
+        display: none;
+    }
 }

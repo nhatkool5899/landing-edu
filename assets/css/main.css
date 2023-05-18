@@ -236,16 +236,7 @@
     font-weight: 500;
     font-style: italic;
 }
-.banner__text::after{
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: -34px;
-    background-size: contain;
-    height: 300px;
-    width: 600px;
-    z-index: -1;
-}
+
 
 
 .count__time{
